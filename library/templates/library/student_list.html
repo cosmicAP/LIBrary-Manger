@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Students</title>
+</head>
+<body>
+<h1>ALL Students</h1>
+<a href="/">--back to dashboard--</a>    
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Student ID</th>
+        <th>Email</th>
+        <th>Phone</th>
+
+
+    </tr>
+    {% for Student in Students %}
+    <tr>
+        <th>{{Student.name}}</th>
+        <th>{{Student.Student_id}}</th>
+        <th>{{Student.email}}</th>
+        <th>{{Student.phone}}</th>
+    </tr>
+    {% endfor %}
+    
+
+
+
+
+
+</table>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
