@@ -14,11 +14,11 @@
         <h2>Active Borrows:{{ total_books_borrwed}}</h2>
     </div>
     
-        <nav>
-
-            <a href="books">view books</a> |
-            <a href="students">view students</a>
-        </nav>
+                  <nav>
+             <a href="{% url 'book_list' %}">Books</a> |
+             <a href="{% url 'students_list' %}">Students</a> |
+            <a href="{% url 'borrow_list' %}">Borrows</a>
+         </nav>
 
 
 

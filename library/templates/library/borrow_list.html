@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head><title> ACTIVE BORROWED BOOKS</title></head>
+<body>
+    <h1> books that are BORROWED</h1>
+    <a href="/">----Dashboard----</a> |
+    <a href="{% url 'borrow_book' %}"> +++borrow a book++++ </a>
+
+
+
+    <table border="2">
+        <tr>
+            <th>Students</th>
+            <th> BOOK</th>
+            <th> Borrow Date</th>
+            <th> ACTION</th>
+
+        </tr>
+        {% for borrow in borrows %}
+        <tr>
+            <td>{{borrow.student.name}}</td>
+            <td>{{borrow.book.title}}</td>
+            <td>{{borrow.borrow_date}}</td>
+            <td>
+            <a href="{% url 'returned_book' borrow.pk %}">--Return--</a>
+            </td>
+
+
+
+
+        </tr>
+
+        {% empty %}
+            <tr><td colspan="3">NO active borrows!!</td></tr>
+        {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </table>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

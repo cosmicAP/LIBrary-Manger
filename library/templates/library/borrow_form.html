@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head> <title> BORROWED BOOKS</title></head>
+<body>
+    <h1> borrow a book </h1>
+    <a href="{% url 'borrow_list' %}">-----back to  Borrows------</a>
+     
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Borrow book</button>
+
+
+
+
+
+    </form>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

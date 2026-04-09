@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> DELETE BOOKS</title>
+    </head>
+<body>
+    <h1> delete the book</h1>
+    <p> Are you sure you wanna delete the <strong>{{book.title}} </strong?></p>
+
+        <form method="post">
+            {%csrf_token%}
+            <button type="submit">"yes , DELETE"
+            </button>
+            <a href="/books/">Cancel</a>
+        </form>
+    
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

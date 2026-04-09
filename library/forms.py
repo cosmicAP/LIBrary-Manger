@@ -1,9 +1,9 @@
 from django import forms
-from .models import book , Students , borrowed_records
+from .models import Book , Students , BorrowedRecords
 
 class BookForm(forms.ModelForm):
-    class meta:
-      model =book
+    class Meta:
+      model = Book
       fields  = ['title', 'author', 'isbn', 'quantity', 'available']
     
  
@@ -17,5 +17,5 @@ class StudentForm(forms.ModelForm):
 class BorrowForm(forms.ModelForm):
     
     class Meta:
-        model = borrowed_records
+        model = BorrowedRecords
         fields = ['book', 'student']

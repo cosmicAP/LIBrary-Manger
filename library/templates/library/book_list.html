@@ -8,6 +8,7 @@
     
     <h1> All books </h1>
     <a href="/">--back to dashboard--</a>
+    <a href="/books/add/">|++ADD BOOK++|</a>
     <table border="1">
         <tr>
             <th>Title</th>
@@ -24,11 +25,16 @@
             <td>{{book.author}}</td>
             <td>{{book.isbn}}</td>
             <td>{{book.available}}</td>
-
+            <td>
+                <a href="/books/edit/{{book.pk}}">EDIT</a> |
+                <a href="/books/delete/{{book.pk}}">DELETE</a>
+            </td>
 
 
         </tr>
         {% endfor %}
+                
+
     </table>
 </body>
 
