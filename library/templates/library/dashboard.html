@@ -1,42 +1,10 @@
-<!DOCTYPE HTML>
-<html>
-    <title> Library Manager
+{% extends 'library/base.html' %}
+{% block title %} Dashboard {% endblock %}
 
-    </title>
-<head>
-<body>
+{% block content %}
+    <h1> Library Mananger Dashboard</h1>
+    <h2> Total Books:{{total_books}}</h2>
+    <h2>Total Students:{{total_students}}</h2>
+    <h2>Active Borrows:{{total_books_borrwed}}</h2>
     
-    <h1> Library Manager Dashboard </h1>
-
-    <div>
-        <h2>Total books : {{total_books}}</h2>
-        <h2>Total Students: {{total_students}}</h2>
-        <h2>Active Borrows:{{ total_books_borrwed}}</h2>
-    </div>
-    
-                  <nav>
-             <a href="{% url 'book_list' %}">Books</a> |
-             <a href="{% url 'students_list' %}">Students</a> |
-            <a href="{% url 'borrow_list' %}">Borrows</a>
-         </nav>
-
-
-
-    
-
-
-
-
-
-
-
-</body>
-
-
-
-
-
-</head>
-
-
-</html>
+{% endblock %}

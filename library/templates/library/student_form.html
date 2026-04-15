@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Students Form</title>
-</head>
-<body>
+{% extends 'library/base.html' %}
+{% block title %}Student Form{% endblock %}
+
+{% block content %}
+
     <h1> Students Form </h1>
     <a href="{% url 'students_list' %}"> ---back to students-----</a>
     <form method="post">
@@ -13,9 +12,6 @@
 
     </form>
     
+{% endblock %}
 
 
-
-
-</body>
-</html>

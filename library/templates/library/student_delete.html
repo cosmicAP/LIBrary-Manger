@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        DELETE Student
-    </head>
-<body>
+{% extends 'library/base.html' %}
+
+{% block title %}Delete Student{% endblock %}
+
+{% block content %}
     <h1>Delete the student</h1>
     <p>
         are you sure you wanna delete the student <strong>{{student.name}}</strong>?
@@ -15,10 +14,7 @@
     </form>
 
 
-</body>
-
-
-
+{% endblock %}
 
 
 

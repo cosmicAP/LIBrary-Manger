@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> DELETE BOOKS</title>
-    </head>
-<body>
+{% extends 'library/base.html' %}
+
+{% block title %}Delete Book{% endblock %}
+
+{% block content %}
     <h1> delete the book</h1>
     <p> Are you sure you wanna delete the <strong>{{book.title}} </strong?></p>
 
@@ -15,25 +14,4 @@
         </form>
     
 
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</html>
+{% endblock %}

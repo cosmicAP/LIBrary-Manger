@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head><title>RETURN BOOK SECTION</title></head>
+{% extends 'library/base.html' %}
 
-<body>
+{% block title %}Return Book{% endblock %}
+
+{% block content %}
     <h1> return book</h1>
     <p> is <strong>{{borrow.student.name}}</strong>
     returing <strong>{{borrow.book.title}}</strong>???</p>
@@ -18,37 +18,8 @@
     
 
 
+{% endblock %}
 
 
 
 
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</html>

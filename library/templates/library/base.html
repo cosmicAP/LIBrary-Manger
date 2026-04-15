@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <title> {% block title %} Library Manager {% endblock %} </title>
+    <style>
+        body{ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;margin: 30px;}
+        nav a {margin-right: 15px;text-decoration: none;color: darkblue;}
+        table {border-collapse: collapse;width: 100%;}
+        th , td {padding: 8px;text-align: left;border: 1px solid #15e5ed;}
+        th {background-color: cadetblue;}
+         .btn {padding: 5px 10px;margin: 2px;}
+</style>
+<head>
+    <body>
+        
+        <nav>
+            <a href="{% url 'dashboard' %}">---DASHBOARD---</a>
+            <a href="{% url 'book_list' %}">---BOOK---</a>
+            <a href="{% url 'students_list' %}">---STUDENTS---</a>
+            <a href="{% url 'borrow_list' %}">---BORROWS---</a>
+        </nav>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

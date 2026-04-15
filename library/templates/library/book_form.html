@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Book Form</title>
-    </head>
-<body>
+{% extends 'library/base.html' %}
+
+{% block title %}Book Form{% endblock %}
+
+{% block content %}
     <h1> BOOK FORM </h1>
     <a href="{% url 'book_list' %}"> ---back to books---- </a>
 
@@ -15,12 +14,4 @@
 
     </form>
 
-
-</body>
-
-
-
-
-
-
-</html>
+{% endblock %}

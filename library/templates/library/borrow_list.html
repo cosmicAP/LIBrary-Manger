@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head><title> ACTIVE BORROWED BOOKS</title></head>
-<body>
+{% extends 'library/base.html' %}
+
+{% block title %}Active Borrows{% endblock %}
+
+{% block content %}
     <h1> books that are BORROWED</h1>
     <a href="/">----Dashboard----</a> |
     <a href="{% url 'borrow_book' %}"> +++borrow a book++++ </a>
@@ -50,21 +51,4 @@
 
 
     </table>
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</html>
+{% endblock %}
